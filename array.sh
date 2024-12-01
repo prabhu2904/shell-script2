@@ -5,4 +5,4 @@
 
  echo "second value: ${FRUITS[1]}
 
- echo "third value: ${FRUITS[2]}
+ echo "third value: ${FRUITS[2]}"
