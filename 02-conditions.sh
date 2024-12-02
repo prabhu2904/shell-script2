@@ -27,5 +27,5 @@ then
  echo "ERROR :: installing git is failed"
  exit 1
 else
- echo"installing git is sucess"
+ echo "installing git is sucess"
 fi
