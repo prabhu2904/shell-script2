@@ -17,4 +17,4 @@ then
  exit 1
 else
  echo "msql installation is sucess" 
-fi 
+fi
