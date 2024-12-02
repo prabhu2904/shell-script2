@@ -10,3 +10,11 @@ else
  echo "Now you are a root user"
 fi # it is reverse for fi , it means end of fi
 yum install mysql -y
+
+if [ $? -ne 0 ]
+then
+ echo "mysql is failed"
+ exit 1
+else
+ echo "msql installation is sucess" 
+fi 
