@@ -5,19 +5,19 @@ ID=$(id -u)
 VALIDATE(){ 
 if [ $? -ne 0 ]
 then
- echo "installation is failed"
+    echo "installation is failed"
  exit 1
 else
- echo "installation is sucess" 
+    echo "installation is sucess" 
 fi    
 }
 
 if [ $ID -ne 0 ]
 then
- echo "ERROR:: please run this script with root access"
+    echo "ERROR::please run this script with root access"
  exit 1 #you can give other than 0
 else
- echo "Now you are a root user"
+    echo "Now you are a root user"
 fi # it is reverse for fi , it means end of fi
 
 yum install mysql -y
