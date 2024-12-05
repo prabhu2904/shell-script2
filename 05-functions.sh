@@ -5,10 +5,10 @@ ID=$(id -u)
 VALIDATE(){ 
 if [ $? -ne 0 ]
 then
- echo "mysql is failed"
+ echo "installation is failed"
  exit 1
 else
- echo "msql installation is sucess" 
+ echo "installation is sucess" 
 fi    
 }
 
