@@ -14,4 +14,11 @@ else
     echo "You are root user"
 fi # fi means reverse of if, indicating condition end
 
-echo "All arguments passed : $@"
+#echo "All arguments passed : $@"
+
+for package in $@
+do
+yum list installed $package
+if [ $? -ne 0 ]
+then yum install $package -y
+done
