@@ -23,5 +23,4 @@ yum list installed $package
 if [ $? -ne 0 ]
 then
  yum install $package -y
-
 done
