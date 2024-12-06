@@ -19,8 +19,8 @@ fi # fi means reverse of if, indicating condition end
 for package in $@
 do
 
-         yum list installed $package
-        if [ $? -ne 0 ]
+     yum list installed $package
+    if [ $? -ne 0 ]
         then
-          yum install $package -y
-done
+        yum install $package -y
+done          
